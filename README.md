@@ -11,7 +11,7 @@ var StringifyObjectTransform = require('stringify-object-transform');
 require('http').createServer(function(request, response) {
   response.statusCode = 404;
   // ...
-  .on('data', function() {
+  .once('data', function() {
     response.statusCode = 200;
     response.setHeader('Content-Type', 'application/json');
   })
