@@ -1,0 +1,34 @@
+{
+  "author": {
+    "name": "Kyle E. Mitchell",
+    "email": "kyle@kemitchell.com",
+    "url": "http://kemitchell.com/"
+  },
+  "bugs": "https://github.com/commonform/stringify-object-transform/issues",
+  "description": "trivial JSON.stringify Transform for Objects",
+  "devDependencies": {
+    "chai": "^1.10.0",
+    "concat-stream": "^1.4.7",
+    "jscs": "^1.10.0",
+    "jshint": "^2.6.0",
+    "mocha": "^2.1.0"
+  },
+  "engines": {
+    "node": "0.10.x"
+  },
+  "homepage": "https://github.com/commonform/stringify-object-transform",
+  "license": "Apache-2.0",
+  "main": "stringify-object-transform.js",
+  "name": "stringify-object-transform",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/commonform/stringify-object-transform.git"
+  },
+  "scripts": {
+    "pre-commit": "npm run lint && npm run test",
+    "lint": "jscs stringify-object-transform.js test && jshint stringify-object-transform.js test",
+    "test": "NODE_ENV=test mocha",
+    "travis-ci": "npm run pre-commit"
+  },
+  "version": "1.0.0"
+}
