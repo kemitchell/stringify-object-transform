@@ -14,7 +14,7 @@
     "mocha": "^2.1.0"
   },
   "engines": {
-    "node": "0.10.x"
+    "node": ">= 0.10"
   },
   "homepage": "https://github.com/kemitchell/stringify-object-transform.js",
   "license": "Apache-2.0",
